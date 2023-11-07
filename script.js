@@ -21,12 +21,5 @@ function setRating(star) {
     }
   }
 
-  function uploadImage(event) {
-    var reader = new FileReader();
-    reader.onload = function() {
-      var output = document.getElementById('imageContainer');
-      output.innerHTML = '<img src="' + reader.result + '" />'; // 이 부분에서 이미지를 컨테이너에 넣습니다.
-    };
-    reader.readAsDataURL(event.target.files[0]);
-  }
+ 
   
