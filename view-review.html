@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="view_reviewstyle.css">
+    <title>리뷰보기</title>
+</head>
+<body>
+    <link rel="stylesheet" type="text/css" href="header.css">
+
+        <header>
+            <div class="container">
+                <a href="home.html">
+                    <div id="homebutton">
+                        <img id="logo" src="logo.png" alt="LOGO">
+                        이화 마켓
+                    </div>
+                </a>
+                <span class="search">
+                    <input type="search" size="40" maxlength="20" placeholder="상품명, 지역명, 판매자 아이디 입력">
+                    <button>검색</button>
+                </span>
+                <div class="headerbutton">
+                    <a href="wishlist.html"><span class="hb" id="wishlist"> <img id="icon" src="wish.png" alt="위시"> </span></a>
+                    <a href="cart.html"><span class="hb" id="cart"> <img id="icon" src="cart.png" alt="카트"> </span></a>
+                    <a href="mypage.html"><span class="hb" id="mypage"> <img id="icon" src="my.png" alt="마이"> </span></a>
+                </div>
+            </div>
+        </header>
+        <aside>
+                <p style="font-weight: bold; font-size:23px"> 카테고리<p>
+                <ul class="category">  
+                    <li><a href="all.html"><div class="category-menu">전체</div></a></li>
+                    <li><a href="clothes.html"> <div class="category-menu">옷</div></a></li>
+                    <li><a href="food.html"> <div class="category-menu">음식</div></a></li>
+                    <li><a href="furniture.html"> <div class="category-menu">가구</div></a></li>
+                    <li><a href="electronic.html"> <div class="category-menu">전자</div></a></li>
+                    <li><a href="etc.html"> <div class="category-menu">기타</div></a></li>
+                </ul>
+        </aside>
+
+        <content>
+            <div class="info-section">
+                <div class="info-block" id="product-reviews">상품 후기</div>
+                <div class="info-block" id="seller-info">판매자 정보</div>
+                <div class="info-block" id="product-details">상품 상세 정보</div> 
+            </div> 
+        </content>
+
+        <div class="review-container">
+            <div class="review-header">
+                <div class="user-section">
+                 <div class="user-icon">
+                    <img src="user.png" alt="User Icon">
+                 </div>
+               
+                </div>
+               
+                <div class="item-container">
+                    <div class="buyer-section">
+                        <div class="buyer-name">구매자 A</div>
+                    </div>
+
+                    <div class="item-details">
+                        <div class="product-name">상품명</div>
+                        <div class="seller-name">판매자명</div>
+                        <div class="date-purchase">날짜</div>
+                    </div>
+
+                    <div class="buyer-info">
+                        <div class="seller-temperature">판매자 온도: 36.5°</div>
+                        <div class="seller-rating">별점: ★★★★☆ </div>
+                        <div class="review-preview">리뷰 미리보기</div>
+                    </div>
+
+                    <div class="review-image-container">
+                        <img src="img.png" alt="Review Image" class="review-image">
+                    </div>
+                </div>
+               
+            </div>
+           
+        </div>  
+        <div class="review-container">
+            <div class="review-header">
+                <div class="user-section">
+                    <div class="user-icon">
+                       <img src="user.png" alt="User Icon">
+                    </div>
+            
+                   </div>
+                   <div class="item-container">
+                    <div class="buyer-section">
+                        <div class="buyer-name">구매자 B</div>
+                    </div>
+                    <div class="item-details">
+                        <div class="product-name">상품명</div>
+                        <div class="seller-name">판매자명</div>
+                        <div class="date-purchase">날짜</div>
+                    </div>
+
+                    <div class="buyer-info">
+                        <div class="seller-temperature">판매자 온도: 36.5°</div>
+                        <div class="seller-rating">별점: ★★★★☆ </div>
+                        <div class="review-preview">리뷰 미리보기</div>
+                    </div>
+
+                    <div class="review-image-container">
+                        <img src="img.png" alt="Review Image" class="review-image">
+                    </div>
+                </div>
+               
+            </div>
+            
+        </div>  
+        <div class="review-container">
+            <div class="review-header">
+                <div class="user-section">
+                    <div class="user-icon">
+                       <img src="user.png" alt="User Icon">
+                    </div>
+            
+                   </div>
+                   <div class="item-container">
+                    <div class="buyer-section">
+                        <div class="buyer-name">구매자 C</div>
+                    </div>
+                    <div class="item-details">
+                        <div class="product-name">상품명</div>
+                        <div class="seller-name">판매자명</div>
+                        <div class="date-purchase">날짜</div>
+                    </div>
+
+                    <div class="buyer-info">
+                        <div class="seller-temperature">판매자 온도: 36.5°</div>
+                        <div class="seller-rating">별점: ★★★★☆ </div>
+                        <div class="review-preview">리뷰 미리보기</div>
+                    </div>
+
+                    <div class="review-image-container">
+                        <img src="img.png" alt="Review Image" class="review-image">
+                    </div>
+                </div>
+               
+            </div>
+            
+        </div>
+        <div class="pagination">
+            
+            <a href="#">&lt;</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">&gt;</a>
+        </div>
+
+       <a href="reg_review.html" class="review-button">리뷰 등록하기</a>
+          
+    </div>  
+</body>
+</html>
