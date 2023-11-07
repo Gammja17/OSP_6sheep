@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&display=swap'); /*폰트*/
+.pw-chk {
+    font-family: 'Do Hyeon';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center; 
+}
+
+.pw-area {
+    display: flex;
+    align-items: center;
+    margin: 10px 0; 
+}
+
+.pw-area label {
+    width: 100px; 
+    text-align: right; 
+    margin-right: 10px; 
+}
+
+.pw-area input {
+    width: 200px;
+}

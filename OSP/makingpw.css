@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&display=swap'); /*폰트*/
+
+.texting{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.texting p{
+    font-family: 'Do Hyeon';
+    text-align:center;
+}

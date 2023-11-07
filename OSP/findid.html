@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <link rel="stylesheet" type="text/css" href="findid.css">
+
+        <header>
+            <div class="container">
+                <a href="home.html">
+                    <div id="homebutton">
+                        <img id="logo" src="logo.png" alt="LOGO">
+                        이화 마켓
+                    </div>
+                </a>
+                <span class="search">
+                    <input type="search" size="40" maxlength="20" placeholder="상품명, 지역명, 판매자 아이디 입력">
+                    <button>검색</button>
+                </span>
+                <div class="headerbutton">
+                    <a href="wishlist.html"><span class="hb" id="wishlist"> <img id="icon" src="wish.png" alt="위시"> </span></a>
+                    <a href="cart.html"><span class="hb" id="cart"> <img id="icon" src="cart.png" alt="카트"> </span></a>
+                    <a href="mypage.html"><span class="hb" id="mypage"> <img id="icon" src="my.png" alt="마이"> </span></a>
+                </div>
+            </div>
+        </header>
+        <aside>
+                <p style="font-weight: bold; font-size:23px"> 카테고리<p>
+                <ul class="category">  
+                    <li><a href="all.html"><div class="category-menu">전체</div></a></li>
+                    <li><a href="clothes.html"> <div class="category-menu">옷</div></a></li>
+                    <li><a href="food.html"> <div class="category-menu">음식</div></a></li>
+                    <li><a href="furniture.html"> <div class="category-menu">가구</div></a></li>
+                    <li><a href="electronic.html"> <div class="category-menu">전자</div></a></li>
+                    <li><a href="etc.html"> <div class="category-menu">기타</div></a></li>
+                </ul>
+        </aside>
+
+        <content>
+            <div class="status">
+                <p style="font-size:23px" > 아이디 찾기 </p> 
+            </div> 
+        </content>
+        <div class="pw-chk">
+            <div class="pw-area">
+                <label for="entertelid">휴대폰 번호 입력</label>
+                <input type="text" id="entertelid" name="entertelid" value="">
+                <button type="button" class="btn-pw">인증번호 전송</button><br>
+            </div>
+            <div class="pw-area">
+                <label for="enterpinid">인증번호 입력</label>
+                <input type="text" id="enterpinid" name="enterpinid" value="">
+                <button type="button" class="btn-pw">제출</button>
+            </div>
+        </div>
+    </body>
+    </html>
