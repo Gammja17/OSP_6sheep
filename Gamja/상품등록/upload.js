@@ -1,4 +1,4 @@
-// Get DOM elements
+
 document.addEventListener("DOMContentLoaded", function () {
   const imageUploadInput = document.getElementById("image-upload-input");
   const uploadedImage = document.getElementById("uploaded-image");
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     reader.onload = function (e) {
       uploadedImage.src = e.target.result;
-      adjustImageSize(); // 이미지 크기 조절
+      adjustImageSize();
     };
 
     reader.readAsDataURL(file);
@@ -81,8 +81,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Function to adjust image size while maintaining aspect ratio
   function adjustImageSize() {
-    const maxWidth = 300; // 원하는 최대 너비 설정
-    const maxHeight = 300; // 원하는 최대 높이 설정
+    const maxWidth = 300;
+    const maxHeight = 300;
 
     const width = uploadedImage.width;
     const height = uploadedImage.height;

@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="upload.js"></script>
+    <script src="idcerti.js"></script>
     
 </head>
 <body>
     <link rel="stylesheet" type="text/css" href="header.css">
+    <link rel="stylesheet" type="text/css" href="upload.css">
 
         <header>
             <div class="container">
@@ -29,6 +31,7 @@
                 </div>
             </div>
         </header>
+        
         <aside>
                 <p style="font-weight: bold; font-size:23px"> 카테고리<p>
                 <ul class="category">  
@@ -77,11 +80,24 @@
                 <input type="checkbox" class="checkbox-bigger">
                 직거래 지역 <input type="text"> <br>
             </div>
-        </content>
 
-<br><br><br>
+            <div class="info-text">
+                <p>상품 설명(10자 이상)</p>
+                <textarea name="info" id="info" cols="85%" rows="10" placeholder="상품의 정보, 상태, 거래 방법, 연락처 등 상품에 대한 정보를 알기 쉽게 작성해주세요."></textarea>
+                
+            </div>
 
+            <div class="idcerti">
+                <label for="seller-id">판매자 ID</label>
+                <input type="text" id="seller-id" name="seller-id">
+                <button id="authenticate-button">인증</button>
+                <div id="message"></div>
+            </div>
 
-
+            <div class="upload-button" >
+                <a href="uploaded.html"> 상품 등록하기 </a> 
+                </div> 
+        
+            </content>
     </body>
     </html>

@@ -98,11 +98,9 @@ aside {
     background-color: #ebefd6;
 }
 
-.content2 {
-  font-family: 'Do Hyeon';
-  display: flex;
-  flex-wrap: wrap; /* 요소들이 한 줄로 배치되지 않고 여러 줄로 나열됩니다. */
-  justify-content: center;
+.content {
+    font-family: 'Do Hyeon';
+    float:right;
 }
 
 .status {
@@ -111,87 +109,6 @@ aside {
     justify-content: center;
     align-items: center;
     background-color: #ebefd6;
+
 }
 
-
-
-.img-upload {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  width: 300px;
-  height: 300px;
-border: 2px solid #5c6e56;
-  float: left;
-  margin-left: 100px;
-  margin-right: 50px;
-  justify-content: flex-end;
-  position: relative; /* 부모 위치 지정 */
-}
-
-.info-upload{
-    font-family:"Do Hyeon";
-    font-size: 25px;
-    text-align: right;
-
-    display: block;
-    margin-right: 100px;
-    margin-left: 50px;
-}
-
-
-.checkbox-bigger{
-  width: 20px; /* 원하는 너비 설정 */
-  height: 20px; /* 원하는 높이 설정 */
-}
-
-
-
-
-.status, .img-upload, .info-upload {
-  flex: 0 0 calc(33.33% - 20px); /* 요소들의 가로 크기는 33.33%로 지정합니다. 여백이 20px이므로 빼줍니다. */
-  margin: 10px; /* 각 요소 주위에 좌우 여백을 추가합니다. */
-}
-#prev-image,
-#next-image {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  padding: 5px 10px;
-  background-color: #5c6e56;
-  color: white;
-  cursor: pointer;
-}
-
-#prev-image {
-  left: -60px; /* 좌측에 위치 */
-}
-
-#next-image {
-  right: -60px; /* 우측에 위치 */
-}
-
-#image-container img {
-  max-width: 100%;
-  max-height: 200px;
-}
-
-#cancel-upload {
-  background-color: #e74c3c;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  cursor: pointer;
-  outline: none;
-  margin-top: 10px;
-}
-
-#uploaded-image {
-  max-width: 100%; /* 이미지의 최대 가로 너비를 100%로 설정하여 비율 유지 */
-  height: auto; /* 높이는 자동으로 조정됨 */
-}
-
-#product-status{
-  font-size:20px;
-}

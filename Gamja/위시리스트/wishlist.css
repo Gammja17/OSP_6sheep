@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&display=swap'); /*폰트*/
+
+body {
+    font-family: Arial, sans-serif;
+}
+#wish-button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+#wishlist-count {
+    margin-left: 10px;
+}
+#product-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.product {
+    width: 300px;
+    height: 200px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.product-remove-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#pagination-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+.page-button {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+}
