@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="upload.js"></script>
+    
+</head>
+<body>
+    <link rel="stylesheet" type="text/css" href="header.css">
+
+        <header>
+            <div class="container">
+                <a href="home.html">
+                    <div id="homebutton">
+                        <img id="logo" src="logo.png" alt="LOGO">
+                        이화 마켓
+                    </div>
+                </a>
+                <span class="search">
+                    <input type="search" size="40" maxlength="20" placeholder="상품명, 지역명, 판매자 아이디 입력">
+                    <button>검색</button>
+                </span>
+                <div class="headerbutton">
+                    <a href="wishlist.html"><span class="hb" id="wishlist"> <img id="icon" src="wish.png" alt="위시"> </span></a>
+                    <a href="cart.html"><span class="hb" id="cart"> <img id="icon" src="cart.png" alt="카트"> </span></a>
+                    <a href="mypage.html"><span class="hb" id="mypage"> <img id="icon" src="my.png" alt="마이"> </span></a>
+                </div>
+            </div>
+        </header>
+        <aside>
+                <p style="font-weight: bold; font-size:23px"> 카테고리<p>
+                <ul class="category">  
+                    <li><a href="all.html"><div class="category-menu">전체</div></a></li>
+                    <li><a href="clothes.html"> <div class="category-menu">옷</div></a></li>
+                    <li><a href="food.html"> <div class="category-menu">음식</div></a></li>
+                    <li><a href="furniture.html"> <div class="category-menu">가구</div></a></li>
+                    <li><a href="electronic.html"> <div class="category-menu">전자</div></a></li>
+                    <li><a href="etc.html"> <div class="category-menu">기타</div></a></li>
+                </ul>
+        </aside>
+
+        <content>
+            <div class="status">
+                <p style="font-size:23px" > 상품 등록 </p> 
+            </div> 
+        </content>
+
+
+        <content class="content2">
+            <div class="container img-upload">
+                <div id="prev-image">이전</div>
+                <div id="image-container">
+                    <img src="#" alt="Uploaded Image" id="uploaded-image">
+                    <p id="uploaded-image-text" style="display: none;"></p>
+                    <p id="image-counter" style="display: none;"></p>
+                </div>
+                <div id="next-image">다음</div>
+                <input type="file" accept="image/*" multiple id="image-upload-input">
+                <button id="cancel-upload">업로드 취소</button> <!-- 업로드 취소 버튼을 img-upload 아래로 이동 -->
+            </div>
+
+            <div class="containter info-upload">
+                상품 명 <input type="text"> <br>
+                상품 설명 제목 <input type="text"> <br>
+                가격 (1000원 이상) <input type="text"><br>
+                <label for="product-status">상품 상태</label>
+                <select id="product-status" name="product-status">
+                    <option value="미개봉">미개봉</option>
+                    <option value="개봉 새상품">개봉 새상품</option>
+                    <option value="중고">중고</option>
+                </select> <br>
+                <input type="checkbox" class="checkbox-bigger">
+                배송비 포함 <br>
+                카테고리 <input type="text"> <br>
+                <input type="checkbox" class="checkbox-bigger">
+                직거래 지역 <input type="text"> <br>
+            </div>
+        </content>
+
+<br><br><br>
+
+
+
+    </body>
+    </html>
