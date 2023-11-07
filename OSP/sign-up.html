@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="sign-upstyle.css">
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <title>Sign In - 이화 마켓</title>
+</head>
+<body>
+        <header>
+            <div class="container">
+                <a href="home.html">
+                    <div id="homebutton">
+                        <img id="logo" src="logo.png" alt="LOGO">
+                        이화 마켓
+                    </div>
+                </a>
+                <span class="search">
+                    <input type="search" size="40" maxlength="20" placeholder="상품명, 지역명, 판매자 아이디 입력">
+                    <button>검색</button>
+                </span>
+                <div class="headerbutton">
+                    <a href="wishlist.html"><span class="hb" id="wishlist"> <img id="icon" src="wish.png" alt="위시"> </span></a>
+                    <a href="cart.html"><span class="hb" id="cart"> <img id="icon" src="cart.png" alt="카트"> </span></a>
+                    <a href="mypage.html"><span class="hb" id="mypage"> <img id="icon" src="my.png" alt="마이"> </span></a>
+                </div>
+            </div>
+        </header>
+        
+        <div class = "col">
+            <aside>
+                <p style="font-weight: bold; font-size:23px"> 카테고리<p>
+                <ul class="category">  
+                    <li><a href="all.html"><div class="category-menu">전체</div></a></li>
+                    <li><a href="clothes.html"> <div class="category-menu">옷</div></a></li>
+                    <li><a href="food.html"> <div class="category-menu">음식</div></a></li>
+                    <li><a href="furniture.html"> <div class="category-menu">가구</div></a></li>
+                    <li><a href="electronic.html"> <div class="category-menu">전자</div></a></li>
+                    <li><a href="etc.html"> <div class="category-menu">기타</div></a></li>
+                </ul>
+            </aside>
+
+            <div class="signup-form">
+                <form action="/submit_signup" method="post">
+                    <p style="font-size:23px; text-align: center;"> 회원 가입 </p>
+    
+                    <div class="input-group">
+                        <label for="username">아이디</label>
+                        <input type="text" id="username" name="username" required>
+                        <button type="button" id="check-username" class="check-btn">중복 확인</button>
+                    </div>
+    
+                    <div class="input-group">
+                        <label for="password">비밀번호</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+    
+                    <div class="input-group">
+                        <label for="confirm-password">비밀번호 확인</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required>
+                    </div>
+    
+                    <div class="input-group">
+                        <label for="name">이름</label>
+                        <input type="text" id="name" name="rlyname" required>
+                    </div>
+    
+                    <div class="input-group">
+                        <label for="email">이메일</label>
+                        <input type="email" id="email" name="email" required>
+                        <button type="button" id="email-check" class="check-btn">중복 확인</button>
+                     </div>
+                
+                     <div class="input-group">
+                        <label for="phone">휴대폰 번호</label>
+                        <input type="tel" id="phone" name="phone" required>
+                        <button type="button" id="verify-phone" class="check-btn">인증번호 받기</button>
+                    </div>
+    
+                    <div class="input-group">
+                        <label for="address">주소</label>
+                        <input type="address" id="address" name="address" required>
+                    </div>
+    
+                    <div class="input-group">
+                        <label for="acount">계좌 입력</label>
+                        <input type="text" id="account" name="account" required>
+                    </div>
+    
+                    <div class="input-group">       
+                        <label for="secret">비밀단어 인증</label>
+                        <input type="text" id="secret" name="secret" required>
+                        <button type="button" id="check-secret" class="check-btn">인증하기</button>
+                    </div>
+    
+                    <div class="input-group">
+                        <button type="submit" class="signup-btn">가입하기</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </body>
+
+   <script>
+    document.addEventListener('DOMContentLoaded', function(){
+        document.getElementById('check-username').addEventListener('click', function(){
+            alert('중복 확인 되었습니다.');
+        });
+
+        document.getElementById('email-check').addEventListener('click', function(){
+            alert('확인 되었습니다.');
+        });
+
+        document.getElementById('verify-phone').addEventListener('click', function(){
+            alert('인증되었습니다');
+        });
+
+        document.getElementById('check-secret').addEventListener('click',function(){
+            alert('인증되었습니다.');
+        });
+    });
+    </script>
+</html>
