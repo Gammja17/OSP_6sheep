@@ -90,6 +90,10 @@ aside {
    margin-bottom: 0;
 }
 
+#product-reviews{
+    background-color: #c9d87b;
+}
+
 .info-block:hover{
     background-color: #c9d8b7;
 }
