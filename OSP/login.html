@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+<body>
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <link rel="stylesheet" type="text/css" href="login.css">
+
+        <header>
+            <div class="container">
+                <a href="home.html">
+                    <div id="homebutton">
+                        <img id="logo" src="logo.png" alt="LOGO">
+                        이화 마켓
+                    </div>
+                </a>
+                <span class="search">
+                    <input type="search" size="40" maxlength="20" placeholder="상품명, 지역명, 판매자 아이디 입력">
+                    <button>검색</button>
+                </span>
+                <div class="headerbutton">
+                    <a href="wishlist.html"><span class="hb" id="wishlist"> <img id="icon" src="wish.png" alt="위시"> </span></a>
+                    <a href="cart.html"><span class="hb" id="cart"> <img id="icon" src="cart.png" alt="카트"> </span></a>
+                    <a href="mypage.html"><span class="hb" id="mypage"> <img id="icon" src="my.png" alt="마이"> </span></a>
+                </div>
+            </div>
+        </header>
+        <aside>
+                <p style="font-weight: bold; font-size:23px"> 카테고리<p>
+                <ul class="category">  
+                    <li><a href="all.html"><div class="category-menu">전체</div></a></li>
+                    <li><a href="clothes.html"> <div class="category-menu">옷</div></a></li>
+                    <li><a href="food.html"> <div class="category-menu">음식</div></a></li>
+                    <li><a href="furniture.html"> <div class="category-menu">가구</div></a></li>
+                    <li><a href="electronic.html"> <div class="category-menu">전자</div></a></li>
+                    <li><a href="etc.html"> <div class="category-menu">기타</div></a></li>
+                </ul>
+        </aside>
+
+        <content>
+            <div class="status">
+                <p style="font-size:23px" > 로그인 </p> 
+            </div> 
+        </content>
+
+        <div class="login-form">
+            <form action="login.php" method="post">
+                <div class="inp-area">
+                    <label for="idbox">아이디(ID)</label>
+                    <input type="text" id="idbox" name="boxforid" autocomplete="off" required><br>
+                </div>
+                <div class="inp-area">
+                    <label for="psbox">비밀번호(pw)</label>
+                    <input type="password" name="psbox" id="psbox" autocomplete="off" required><br>
+                </div>
+                <div class="inp-area">
+                    <button type="submit" class="btn-area">Login</button><br>
+                </div>
+            </form>
+            <div class="fmet">
+                <a href="findpw.html">비밀번호찾기</a>
+                <a href="findid.html">아이디찾기</a>
+                <a href="findpw.html">회원가입</a>
+            </div>
+        </div>
+    </body>
+</html>
