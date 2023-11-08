@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <link rel="stylesheet" href="my_page.css">
+    
+        <header>
+            <div class="container">
+                <a href="home.html">
+                    <div id="homebutton">
+                        <img id="logo" src="logo.png" alt="LOGO">
+                        이화 마켓
+                    </div>
+                </a>
+                <span class="search">
+                    <input type="search" size="40" maxlength="20" placeholder="상품명, 지역명, 판매자 아이디 입력">
+                    <button>검색</button>
+                </span>
+                <div class="headerbutton">
+                    <a href="wishlist.html"><span class="hb" id="wishlist"> <img id="icon" src="wish.png" alt="위시"> </span></a>
+                    <a href="cart.html"><span class="hb" id="cart"> <img id="icon" src="cart.png" alt="카트"> </span></a>
+                    <a href="mypage.html"><span class="hb" id="mypage"> <img id="icon" src="my.png" alt="마이"> </span></a>
+                </div>
+            </div>
+        </header>
+        <aside>
+                <p style="font-weight: bold; font-size:23px"> 카테고리<p>
+                <ul class="category">  
+                    <li><a href="all.html"><div class="category-menu">전체</div></a></li>
+                    <li><a href="clothes.html"> <div class="category-menu">옷</div></a></li>
+                    <li><a href="food.html"> <div class="category-menu">음식</div></a></li>
+                    <li><a href="furniture.html"> <div class="category-menu">가구</div></a></li>
+                    <li><a href="electronic.html"> <div class="category-menu">전자</div></a></li>
+                    <li><a href="etc.html"> <div class="category-menu">기타</div></a></li>
+                </ul>
+        </aside>
+
+        <content>
+            <div class="status">
+                <p style="font-size:23px" > 마이페이지 </p> 
+            </div> 
+        </content>
+
+
+<!--프로필 정보확인-->
+<div class="container">
+            <div class="profile-box">
+                <div class="profile-image">
+                    <img src="person.png" alt="프로필 사진" style="width: 400px; height: 300px;" >
+                </div>
+                <div class="profile-info">
+                    <p>ID: 사용자 아이디</p>
+                    <p>PW: 비밀번호</p>
+                    <p>이름: 사용자 이름</p>
+                    <p>이메일: 사용자 이메일</p>
+                    <p>주소: 사용자 주소</p>
+                    <p>계좌: 사용자 계좌</p>
+                </div>
+            </div>
+            
+            
+        
+            <!--내 지갑 -->
+            <div class="store-box">
+                <h2>내 상점</h2>
+                <div class="product">
+                    <img src="img.jpg" alt="상품1">
+                    <div class="product-info">
+                        <p class="product-state">판매중</p>
+                        <p>상품명: 상품 1</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="img.jpg" alt="상품2">
+                    <div class="product-info">
+                        <p class="product-state">판매중</p>
+                        <p>상품명: 상품 2</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="img.jpg" alt="상품3">
+                    <div class="product-info">
+                        <p class="product-state">판매중</p>
+                        <p>상품명: 상품 3</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+          
+
+            <!--프로필 수정 버튼-->
+            <button onclick="edit.php" class="button" id="edit-button">회원정보수정</button>
+            <button onclick="logout.php" class="button" id="logout-button">로그아웃</button>
+        
+        
+
+        <!--내 지갑 -->
+        <div class="wallet-box">
+            <h2 class="wallet">내 지갑</h2>
+            <h3>현재 잔액: <span id="current"></span></h3>
+    <input type="button" id="btn1" value="1000원" />
+    <input type="button" id="btn2" value="10000원" />
+    <input type="button" id="btn3" value="50000원" />
+    
+        </div>
+        <script src="my_page.js"></script>
+    </body>
+    </html>

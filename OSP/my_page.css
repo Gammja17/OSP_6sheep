@@ -1,0 +1,111 @@
+body{
+    font-family: 'Do Hyeon';
+  }
+
+  .container{
+    display: flex;
+    align-items: flex-start;
+  }
+.profile-box{
+    display: flex;
+    width: 1000px;
+    align-items: center;
+}
+  .profile-image{
+    
+    width: 400px;
+    height: 300px;
+    margin: 50px;
+
+  }
+
+.profile-info{
+    display: flex;
+   flex-direction: column;
+}
+  .store-box {
+    border: 2px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    padding: 0px;
+    height: 380px;
+    margin-right: 46px;
+    margin-top: 10px;
+}
+
+.store-box h2 {
+    font-size: 18px;
+    background-color: #ebefd6;
+    margin: 0px;
+    height: 40px;
+    padding-top: 5pt;
+}
+
+.product {
+    
+    align-items: center;
+    display: inline-block;
+    margin: 10px;
+    display: inline-block;
+    height: 120px;;
+
+}
+.product-info p{
+    margin: 6px;
+}
+
+.product-state{
+    color: red;
+}
+
+.product img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+.button {
+    display: inline-block;
+    margin: 10px;
+    background-color: #ebefd6;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    width: 130px;
+    height: 40px;
+}
+button#edit-button.button{
+    margin-left: 110px;
+}
+button#logout-button.button{
+    margin-left:40px;
+}
+/* 세 번째 박스: 내 지갑 스타일 */
+.wallet-box {
+    border: 2px solid #ccc;
+    padding: 0px;
+    margin: 10px;
+    text-align: center;}
+    
+
+.wallet{
+    font-size: 20px;
+    text-align: center;
+    background-color:  #5c6e56;
+    margin: 0px;
+    margin-top: 4px;
+    height: 40px;
+    color:white;
+}
+
+
+#btn1,#btn2,#btn3{
+
+    width: 130px;
+    height: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: #ebefd6;
+    color: #000;
+    border-color: #ebefd6;
+}
