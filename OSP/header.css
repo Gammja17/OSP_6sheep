@@ -51,10 +51,11 @@ a{
 aside {
     background-color: #c9d8b7;
     width: 200px;
+    float:left;
     text-align: center;
     font-family: 'Do Hyeon';
-    font-size: 20px;
-    padding-top: 3px;
+    font-size: 23px;
+    padding-top: 3.7px;
 } 
 
 .category {
@@ -94,5 +95,18 @@ aside {
 }
 
 .category-menu:hover {
+    background-color: #ebefd6;
+}
+
+.content {
+    font-family: 'Do Hyeon';
+    float:right;
+}
+
+.status {
+    font-family: 'Do Hyeon';
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #ebefd6;
 }
