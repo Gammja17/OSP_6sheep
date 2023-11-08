@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<body>
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <link rel="stylesheet" type="text/css" href="review-detail.css">
+
+        <header>
+            <div class="container">
+                <a href="home.html">
+                    <div id="homebutton">
+                        <img id="logo" src="logo.png" alt="LOGO">
+                        이화 마켓
+                    </div>
+                </a>
+                <span class="search">
+                    <input type="search" size="40" maxlength="20" placeholder="상품명, 지역명, 판매자 아이디 입력">
+                    <button>검색</button>
+                </span>
+                <div class="headerbutton">
+                    <a href="wishlist.html"><span class="hb" id="wishlist"> <img id="icon" src="wish.png" alt="위시"> </span></a>
+                    <a href="cart.html"><span class="hb" id="cart"> <img id="icon" src="cart.png" alt="카트"> </span></a>
+                    <a href="mypage.html"><span class="hb" id="mypage"> <img id="icon" src="my.png" alt="마이"> </span></a>
+                </div>
+            </div>
+        </header>
+        <div class="aside-container">
+            <aside>
+                <p style="font-weight: bold; font-size:23px"> 카테고리<p>
+                <ul class="category">  
+                    <li><a href="all.html"><div class="category-menu">전체</div></a></li>
+                    <li><a href="clothes.html"> <div class="category-menu">옷</div></a></li>
+                    <li><a href="food.html"> <div class="category-menu">음식</div></a></li>
+                    <li><a href="furniture.html"> <div class="category-menu">가구</div></a></li>
+                    <li><a href="electronic.html"> <div class="category-menu">전자</div></a></li>
+                    <li><a href="etc.html"> <div class="category-menu">기타</div></a></li>
+                </ul>
+            </aside>
+
+            <div class="content-container">
+                <content>
+                    <div class="info-section">
+                        <div class="info-block" id="product-reviews">상품 후기</div>
+                        <div class="info-block" id="seller-info">판매자 정보</div>
+                        <div class="info-block" id="product-details" style="background-color:#c9d8b7;">상품 상세 정보</div> 
+                    </div>  
+                </content>
+
+                <div class="all">
+                    <div class="seller">
+                        <div class="seller-img">
+                            <img src="person.png" alt="프로필 사진" style="width: 400px; height: 300px;" >
+                        </div>
+                        <div class="seller-info">
+                            <h1>구매자 C</h1>
+                            <p><u>판매자 명</u><br><u>판매자온도</u><br><u>상품 명</u><br><u>리뷰 작성 날짜</u><br></p>
+                        </div>
+                    </div>
+                    <input type="text" class="review-title" readonly>
+                    <div class="star-rating" data-current-rating="0">
+                    <div class="stars">
+                        <span class="star" onclick="setRating(this)" data-value="1">&#9733;</span>
+                        <span class="star" onclick="setRating(this)" data-value="2">&#9733;</span>
+                        <span class="star" onclick="setRating(this)" data-value="3">&#9733;</span>
+                        <span class="star" onclick="setRating(this)" data-value="4">&#9733;</span>
+                        <span class="star" onclick="setRating(this)" data-value="5">&#9733;</span>
+                    </div>
+        
+                    <div class="input-container2">
+                        <textarea id="pro-review" name="pro-review" readonly></textarea>
+                    </div>
+                    <div class="things-img">
+                        <img src="things.jpeg" alt="물건사진" style="width: 400px; height: 300px;" >
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

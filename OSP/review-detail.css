@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&display=swap'); /*폰트*/
+
+body {
+  font-family: 'Do Hyeon';
+}
+.aside-container{
+  display: flex;
+}
+.content {
+  font-family: 'Do Hyeon';
+  float:right;
+}
+
+.info-section{
+  font-family: 'Do Hyeon';
+  background-color: #ebefd6;
+  display:flex;
+  justify-content: column;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+  height: 80px;
+}
+
+.info-block{
+ width:100%;
+ text-align: center;
+ font-size: 25px;
+ padding: 22px;
+ cursor: pointer;
+ transition: background-color 0.3s;
+ margin-bottom: 0;
+}
+
+.info-block:hover{
+  background-color: #c9d8b7;
+}
+
+.content-container{
+  flex-direction: column;
+}
+
+.all{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.seller{
+  display:flex;
+}
+
+.seller-img img{
+  max-width: 100%;
+  max-height: 200px;
+  margin:10px;
+}
+
+.seller-info{
+  font-size: 20px;
+  font-family: "Do Hyeon";
+  margin-left:100px;
+  margin-right: 100px;
+  text-align:center;
+  justify-content: right;
+}
+
+.stars{
+  display: flex;
+  direction: flex-end;
+  margin: 0 20px;
+}
+
+.star-rating{
+  font-size: 25px;
+  color: gray;
+}
+
+.star-rating .star{
+  color: #d3d3d3;
+  cursor: pointer;
+}
+
+.star-rating .star.filled{
+  color: gold;
+}
+
+.review-title{
+  width:900px;
+  padding:20px;
+  height: 10px;
+  margin: 10px 20px;
+  font-family: 'Do Hyeon';
+  font-size: 18px;
+  border:2px solid #ccc;
+  background-color: #f5f5f5;
+}
+
+.input-container2 #pro-review{
+  width: 1120px;
+  flex: 1;
+  padding: 20px;
+  height: 100px;
+  font-family: 'Do Hyeon';
+  font-size: 18px;
+  border: 2px solid #ccc;
+  background-color: #f5f5f5;
+  resize: vertical;
+  outline: none;
+  margin: 0px 20px;
+}
+
+.things-img img{
+  max-width: 100%;
+  max-height: 200px;
+  margin:10px;
+}
