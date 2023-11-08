@@ -40,57 +40,66 @@
 
     <content>
         <div class="status">
-            <p style="font-size:23px" > 위시리스트(<span id="wishlist-count">0</span> ) </p> 
+            <p style="font-size:23px" > 위시리스트(2) </p> 
         </div>
     </content>
-    <button id="wish-button">Wish</button>
-    
-    <div id="product-container"></div>
 
-    
+    <div id="product-container">
+        <a href="product_details.html">
+        <div class="product">
+            <span class="product-img">
+                <img src="camera.jpg" alt="product image">
+            </span>
+            <div class="product-info">
+                <p style="font-size: 23px;">카메라</p>
+                <p style="font-size: 15px;">
+                    150000원<br>
+                    감자<br>
+                    36.5<br>
+                    <span style="color:orange">★★★★★(2)</span>
+                <button class="custom-button">Wish</button>
+                </p>
+            </div>
+        </div>
+    </a>
 
+
+
+    <a href="product_details.html">
+        <div class="product">
+            <span class="product-img">
+                <img src="airpod.jpg" alt="product image">
+            </span>
+            <div class="product-info">
+                <p style="font-size: 23px;">에어팟</p>
+                <p style="font-size: 15px;">
+                    80000원<br>
+                    고구마<br>
+                    34.5<br>
+                    <span style="color:orange">★★★★☆(2)</span>
+                <button class="custom-button">Wish</button>
+                </p>
+            </div>
+        </div>
+    </a>
+
+</div>
+
+    <br><br><br><hr style="border:1.5px solid black">
+
+
+    <div class="pagination">
+        
+        <a href="#">&lt;</a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">&gt;</a>
+    </div>
 
   
-    <script>
-        let wishlistCount = 0;
-        const maxProducts = 20;
-        
-        document.getElementById('wish-button').addEventListener('click', function() {
-            if (wishlistCount < maxProducts) {
-                wishlistCount++;
-                const productContainer = document.getElementById('product-container');
-                const product = createProduct(wishlistCount);
-                productContainer.appendChild(product);
-                updateWishlistCount();
-            }
-        });
-
-        function createProduct(productNumber) {
-            const product = document.createElement('div');
-            product.className = 'product';
-            product.innerHTML = `
-                <p>Product ${productNumber}</p>
-                <button class="product-remove-button" onclick="removeProduct(${productNumber})">Remove</button>
-            `;
-            return product;
-        }
-
-        function removeProduct(productNumber) {
-            const productContainer = document.getElementById('product-container');
-            const productToRemove = Array.from(productContainer.getElementsByClassName('product')).find(product => {
-                return product.textContent.includes(`Product ${productNumber}`);
-            });
-
-            if (productToRemove) {
-                productToRemove.remove();
-                wishlistCount--;
-                updateWishlistCount();
-            }
-        }
-
-        function updateWishlistCount() {
-            document.getElementById('wishlist-count').textContent = wishlistCount;
-        }
-    </script>
+    
 </body>
 </html>

@@ -2,11 +2,10 @@
 
 
 
-
 #product-container {
   display: flex;
   flex-wrap: wrap;
-  margin-top:50px;
+  margin-top:150px;
   margin-left:300px;
   
 }
@@ -66,8 +65,29 @@ a {
   font-family: "Do Hyeon";
 }
 
+.sort {
+  float: left;
+  margin-top: 60px;
+  margin-left: 100px;
+}
 
+.upload-button {
+  margin-top: 50px;
+  margin-right: 100px;
+  float: right;
+  width: 200px;
+  height: 50px;
+  background-color: #c9d8b7;
+  text-align: center;
+  border: 3px solid black;
+  padding-top: 5px;
+  transition: background-color 0.3s, opacity 0.3s; 
+}
 
+.upload-button:hover{
+  background-color: #c9d8b7; 
+  opacity: 0.6; 
+}
 
 .product-image{
   width:200px;
