@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+    <link rel="stylesheet" href="4_리뷰 작성.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>리뷰 등록 - 이화 마켓</title>
+</head>
+<body>
+
+    <link rel="stylesheet" type="text/css" href="0_헤더.css">
+    <link rel="stylesheet" type="text/css" href="4_리뷰 작성.css">
+
+        <header>
+            <div class="container">
+                <a href="2_홈.html">
+                    <div id="homebutton">
+                        <img id="logo" src="10_logo.png" alt="LOGO">
+                        이화 마켓
+                    </div>
+                </a>
+                <span class="search">
+                    <input type="search" size="40" maxlength="20" placeholder="상품명, 지역명, 판매자 아이디 입력">
+                    <button>검색</button>
+                </span>
+                <div class="headerbutton">
+                    <a href="9_위시리스트.html"><span class="hb" id="wishlist"> <img id="icon" src="10_wish.png" alt="위시"> </span></a>
+                    <a href="9_장바구니.html"><span class="hb" id="cart"> <img id="icon" src="10_cart.png" alt="카트"> </span></a>
+                    <a href="9_마이페이지.html"><span class="hb" id="mypage"> <img id="icon" src="10_my.png" alt="마이"> </span></a>
+                </div>
+            </div>
+        </header>
+        <aside>
+                <p style="font-weight: bold; font-size:23px"> 카테고리<p>
+                <ul class="category">  
+                    <li><a href="all.html"><div class="category-menu">전체</div></a></li>
+                    <li><a href="clothes.html"> <div class="category-menu">옷</div></a></li>
+                    <li><a href="food.html"> <div class="category-menu">음식</div></a></li>
+                    <li><a href="furniture.html"> <div class="category-menu">가구</div></a></li>
+                    <li><a href="electronic.html"> <div class="category-menu">전자</div></a></li>
+                    <li><a href="etc.html"> <div class="category-menu">기타</div></a></li>
+                </ul>
+        </aside>
+
+        <content>
+            <div class="info-section">
+                <div class="info-block" id="product-reviews">상품 후기</div>
+                <div class="info-block" id="seller-info">판매자 정보</div>
+                <div class="info-block" id="product-details">상품 상세 정보</div> 
+            </div> 
+        </content>
+   
+    <main>
+        <div class="seller-review">
+            <h2>판매자 서비스 평가</h2>
+            <!--만약에 회사 이름 넣고 싶으면 추후 코드 추가-->
+                <!--일단 좋아요 싫어요 누르는 버튼 넣어두었지만 추후 삭제 가능-->
+        </div>
+        <div class="question" id="question">배송, 포장, 질문, 응대, 상품 가격 등 판매자에대한 만족도는 어떠셨나요?</div>
+        <input type="file">  
+            <div class="input-container">
+                <textarea id="review" name="review" placeholder="리뷰를 작성해주세요"></textarea>
+            </div>
+
+            <div class="evaluation-product">
+                <h2>상품 품질 평가</h2>
+                <!--만약 리뷰자 아이디를 받아와서 옆에서 계속 바뀌게 하고 싶으면 추후 삽입-->
+                <!--해당 상품 사진이랑 상품명 수량 가져오는 것은 일단은 삭제했음-->
+            </div>
+            <div class="star-rating" data-current-rating="0">
+                <div class="stars">
+                   <span class="star" onclick="setRating(this)" data-value="1">&#9733;</span>
+                   <span class="star" onclick="setRating(this)" data-value="2">&#9733;</span>
+                   <span class="star" onclick="setRating(this)" data-value="3">&#9733;</span>
+                   <span class="star" onclick="setRating(this)" data-value="4">&#9733;</span>
+                   <span class="star" onclick="setRating(this)" data-value="5">&#9733;</span>
+            </div>
+            <input type="file"><br>
+            <input type="text" placeholder="제목을 작성해주세요" class="review-title">
+            <label class="upload-image">
+                
+            </label>
+            
+            <div class="input-container2">
+                <textarea id="pro-review" name="pro-review" placeholder="리뷰를 작성해주세요"></textarea>
+            </div>
+            <div class="button-container">
+                <button id="submit-review" class="submit-button">리뷰 등록</button> 
+            </div>
+            
+            
+       
+    </main>
+<script src="4_리뷰 작성.js"></script>    
+</body>
+</html>

@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&display=swap'); /*폰트*/
+
+.checking-form {
+    font-family: 'Do Hyeon';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center; 
+}
+
+.chk-area {
+    display: flex;
+    align-items: center;
+    margin: 10px 0; 
+}
+
+.chk-area label {
+    width: 100px; 
+    text-align: right; 
+    margin-right: 10px; 
+}
+
+.chk-area input {
+    width: 200px;
+    margin : 0 10px;
+}

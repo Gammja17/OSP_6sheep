@@ -1,0 +1,63 @@
+.signup-form{
+    font-family: 'Do Hyeon';
+    max-width: 900px;
+    margin: 0 auto;
+    flex: 1;
+}
+.col {
+    display: flex;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="realname"],
+input[type="email"],
+input[type="phone"],
+input[type="address"],
+input[type="account"],
+input[type="secret"]{
+    width: 100%; 
+    padding: 10px; 
+    margin: 5px 0 20px 0; 
+    border: 1px solid #000; 
+    border-radius: 5px; 
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.input-group label{
+    flex:0 0 120px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.input-group input,
+.input-group button{
+    flex:1;
+    min-width:0;
+}
+
+.signup-btn{
+    font-family:'Do Hyeon';
+    font-size:20px;
+    background-color: #c9d8b7;
+    margin-top:10px;
+    display:block;
+}
+
+.check-btn{
+    padding: 5px 3px;
+    background-color: #ebefd6;
+    color: black;
+    border: 1px solid black;
+    margin-left:10px;
+    margin-bottom: 13px;
+    cursor:pointer;
+    font-family: 'Do Hyeon';
+    font-size: 18px;
+}

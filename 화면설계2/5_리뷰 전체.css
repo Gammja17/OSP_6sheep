@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&display=swap'); /*폰트*/
+
+header {
+    background-color: #5c6e56;
+    margin-top: 20px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.container {
+    width: 980px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+#homebutton {
+    display: flex;
+    font-family: 'Do Hyeon';
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;
+} /*홈화면 이화마켓 글씨*/
+#logo {
+    width: 55px;
+    height: 55px;
+} /*홈화면 로고*/
+#icon {
+    width: 35px;
+    height: 35px;
+    
+} /*위시리스트, 장바구니, 마이페이지 아이콘*/
+
+.search {
+    display: flex;
+    text-align: center;
+    width: 400px;
+} /*검색창*/
+
+.headerbutton {
+    display: flex;
+} 
+.headerbutton a {
+    margin-right: 20px;
+} 
+
+aside {
+    background-color: #c9d8b7;
+    width: 200px;
+    float:left;
+    text-align: center;
+    font-family: 'Do Hyeon';
+    font-size: 23px;
+    padding-top: 3.7px;
+} 
+
+.category {
+    list-style-type: none;
+    background-color: white;
+    margin: 0; 
+    padding: 0; 
+}
+
+.category li {
+    font-family: 'Do Hyeon';
+    font-size: 22px;
+    text-align: center;
+    margin: 0; 
+    padding: 10; 
+}
+
+.category-menu {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 200px;
+    height: 9vh;
+    padding: 20px 0;
+    margin: 0;
+    transition: background-color 0.3s;
+}
+
+.user-section{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  width:100px;
+}
+
+.category-menu a {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 200px;
+    height: 9vh;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.category-menu:hover {
+    background-color: #ebefd6;
+}
+
+.content {
+    font-family: 'Do Hyeon';
+    float:right;
+}
+
+.status {
+    font-family: 'Do Hyeon';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ebefd6;
+}
+
+.info-section{
+    font-family: 'Do Hyeon';
+    background-color: #ebefd6;
+    display:flex;
+    justify-content: column;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+}
+
+.info-block{
+   width:100%;
+   text-align: center;
+   font-size: 25px;
+   padding: 22px;
+   cursor: pointer;
+   transition: background-color 0.3s;
+   margin-bottom: 0;
+}
+
+.info-block:hover{
+    background-color: #c9d8b7;
+}
+
+  
+ .review-container {
+    display: flex;
+    font-family: 'Do Hyeon';
+    align-items: center;
+    border: 0.5px solid #000;
+    height: 200px;
+  }
+
+
+  
+  .user-icon {
+   width:55px;
+   height:55px;
+   display:flex;
+   align-items:center;
+   justify-content:center;
+   margin-left: 25px;
+   margin-top:60px;
+  }
+
+  .user-icon img{
+    max-width:100%;
+    max-height:100%;
+    margin-top: 60px;
+    margin-left: 50px;
+  }
+  
+  .review-image-container{
+    width:150px;
+    height:100px;
+    border: 1px solid #000;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    overflow:hidden;
+    position: relative;
+    bottom: 34px;
+    left: 320px;
+  }
+
+  .review-image{
+    max-width:100%;
+    max-height:100%;
+    object-fit:cover;
+  }
+
+  .item-container{
+    display:flex;
+    align-items: flex-start;
+  }
+
+  .buyer-section{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-right:20px;
+    margin-left: 50px;
+    margin-top: 25px;
+    font-size: 25px;
+  }
+
+  .user-section img{
+    width:50px;
+    height:50px;
+    margin-bottom:10px;
+    margin-right: 0;
+  }
+
+  .item-details{
+    font-size: 25px;
+    margin-left: 55px;
+    position: relative;
+    bottom: 34px;
+  }
+
+.buyer-info { 
+  margin-left:380px;
+  margin-bottom: 30px;
+  position: relative;
+  bottom: 34px;
+  font-size:25px;
+}
+
+.pagination{
+  display:inline-block;
+  margin-left: 550px;
+  margin-top: 45px;
+}
+
+.pagination a{
+  color:black;
+  float:left;
+  padding: 8px 16px;
+  font-family: 'Do Hyeon';
+  text-decoration: none;
+  
+  transition: background-color .3s;
+  margin-left: 0 4px;
+}
+
+.pagination a:hover{
+  background-color: #c9d8b7;
+  color:black;
+  border:1px solid #c9d8b7;
+}
+
+#product-reviews{
+    background-color: #c9d87b;
+}
+
+.review-button{
+  padding:10px 20px;
+  background-color:#c9d8b7 ;
+  color:black;
+  font-family: 'Do Hyeon';
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin-left: 400px;
+  margin-bottom: 25px;
+  border:none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.review-button:hover{
+  background-color: #c9d8b7;
+}
+
+  
+  

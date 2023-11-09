@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&display=swap'); /*폰트*/
+
+
+
+
+#product-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top:50px;
+  margin-left:300px;
+  
+}
+.product {
+  width: 300px;
+  height: 200px;
+  border: 3px solid black;
+  margin: 10px;
+  display: flex;
+  transition: background-color 0.3s, opacity 0.3s; 
+}
+
+.product:hover {
+  background-color: rgba(255, 255, 255, 0.5); 
+  opacity: 0.6; 
+}
+
+.product-img {
+  width: 200px; 
+  height: 200px; 
+
+}
+
+.product-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-right: 3px solid black;
+}
+
+
+
+.product-info{
+  width: 90px;
+  height: 200px;
+  font-family: "Do Hyeon";
+float:right;
+margin-left:10px;
+}
+
+.custom-button {
+  background: url('10_wishbutton.png') no-repeat;
+  background-size: cover;
+  width: 35px;
+  height: 35px;
+  border: none;
+  cursor: pointer;
+  text-indent: -9999px;
+}
+
+
+
+
+
+a {
+  font-size: 23px;
+  font-family: "Do Hyeon";
+}
+
+
+
+
+.product-image{
+  width:200px;
+  height:200px;
+  background-color: aqua;
+  float:left;
+
+
+}
+
+.pagination{
+  display:inline-block;
+  margin-left: 550px;
+  margin-top: 45px;
+}
+
+.pagination a{
+  color:black;
+  float:left;
+  padding: 8px 16px;
+  font-family: 'Do Hyeon';
+  text-decoration: none;
+  
+  transition: background-color .3s;
+  margin-left: 0 4px;
+}
+
+.pagination a:hover{
+  background-color: #c9d8b7;
+  color:black;
+  border:1px solid #c9d8b7;
+}
