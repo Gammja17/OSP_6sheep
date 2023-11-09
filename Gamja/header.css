@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&display=swap'); /*폰트*/
+
+header {
+    background-color: #5c6e56;
+    margin-top: 20px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.container {
+    width: 980px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+#homebutton {
+    display: flex;
+    font-family: 'Do Hyeon';
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;
+} /*홈화면 이화마켓 글씨*/
+#logo {
+    width: 55px;
+    height: 55px;
+} /*홈화면 로고*/
+#icon {
+    width: 35px;
+    height: 35px;
+    
+} /*위시리스트, 장바구니, 마이페이지 아이콘*/
+
+.search {
+    display: flex;
+    text-align: center;
+    width: 400px;
+} /*검색창*/
+
+.headerbutton {
+    display: flex;
+} 
+.headerbutton a {
+    margin-right: 20px;
+} 
+
+aside {
+    background-color: #c9d8b7;
+    width: 200px;
+    float:left;
+    text-align: center;
+    font-family: 'Do Hyeon';
+    font-size: 23px;
+    padding-top: 3.7px;
+} 
+
+.category {
+    list-style-type: none;
+    background-color: white;
+    margin: 0; 
+    padding: 0; 
+}
+
+.category li {
+    font-family: 'Do Hyeon';
+    font-size: 22px;
+    text-align: center;
+    margin: 0; 
+    padding: 10; 
+}
+
+.category-menu {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 200px;
+    height: 9vh;
+    padding: 20px 0;
+    margin: 0;
+    transition: background-color 0.3s;
+}
+
+.category-menu a {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 200px;
+    height: 9vh;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.category-menu:hover {
+    background-color: #ebefd6;
+}
+
+.content {
+    font-family: 'Do Hyeon';
+    float:right;
+}
+
+.status {
+    font-family: 'Do Hyeon';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ebefd6;
+}
