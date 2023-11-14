@@ -8,12 +8,12 @@
 </head>
 
 <body>
-    <link rel="stylesheet" type="text/css" href="0_헤더.css">
-    <link rel="stylesheet" type="text/css" href="9_마이페이지.css">
+    <link rel="stylesheet" type="text/css" href="0_header.css">
+    <link rel="stylesheet" type="text/css" href="9_3_mypage.css">
 
         <header>
             <div class="container">
-                <a href="2_홈.html">
+                <a href="2_home.html">
                     <div id="homebutton">
                         <img id="logo" src="10_logo.png" alt="LOGO">
                         이화 마켓
@@ -24,19 +24,13 @@
                     <button>검색</button>
                 </span>
                 <div class="headerbutton">
-                    <a href="9_위시리스트.html"><span class="hb" id="wishlist"> <img id="icon" src="10_wish.png" alt="위시"> </span></a>
-                    <a href="9_장바구니.html"><span class="hb" id="cart"> <img id="icon" src="10_cart.png" alt="카트"> </span></a>
-                    <a href="9_마이페이지.html"><span class="hb" id="mypage"> <img id="icon" src="10_my.png" alt="마이"> </span></a>
+                    <a href="9_1_wishlist.html"><span class="hb" id="wishlist"> <img id="icon" src="10_wish.png" alt="위시"> </span></a>
+                    <a href="9_2_shopping_cart.html"><span class="hb" id="cart"> <img id="icon" src="10_cart.png" alt="카트"> </span></a>
+                    <a href="9_3_mypage.html"><span class="hb" id="mypage"> <img id="icon" src="10_my.png" alt="마이"> </span></a>
                 </div>
             </div>
         </header>
-    <content>
-        <div class="status">
-            <p style="font-size:23px"> 마이페이지 </p>
-        </div>
-    </content>
 
-    <div class="aside-container">
         <aside>
             <p style="font-weight: bold; font-size:23px"> 카테고리
             <p>
@@ -61,11 +55,24 @@
                     </a></li>
             </ul>
         </aside>
+        
+        <content>
+            <div class="status">
+                <p style="font-size:23px"> 마이페이지 </p>
+            </div>
+        </content>
+
+
+    <div class="aside-container">
+
+        
 
         
 
         <!--프로필 정보확인-->
         <div class="container-buttons">
+            <div class="B">
+            <div class="A">
             <div class="container">
                 <div class="profile-box">
                     <div class="profile-image">
@@ -119,17 +126,21 @@
         </div>
     </div>
 
-
-    <!--내 지갑 -->
-    <div class="wallet-box">
+            <!--내 지갑 -->
+        <div class="wallet-box">
         <h2 class="wallet">내 지갑</h2>
         <h3>현재 잔액: <span id="current"></span></h3>
         <input type="button" id="btn1" value="1000원 충전" />
         <input type="button" id="btn2" value="10000원 충전" />
         <input type="button" id="btn3" value="50000원 충전" />
 
+        </div>
     </div>
-    <script src="9_마이페이지.js"></script>
+</div>
+
+
+
+    <script src="9_3_mypage.js"></script>
 </body>
 
 </html>
