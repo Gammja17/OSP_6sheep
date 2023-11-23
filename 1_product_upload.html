@@ -52,52 +52,77 @@
 
 
         <content class="content2">
-            <div class="container img-upload">
-                <div id="prev-image">이전</div>
+
+            <div class="wrapping">
+
+            <div class="upside">
+
+            <div class="img-upload">
                 <div id="image-container">
-                    <img src="#" alt="Uploaded Image" id="uploaded-image">
+                    <img src="#" id="uploaded-image">
                     <p id="uploaded-image-text" style="display: none;"></p>
                     <p id="image-counter" style="display: none;"></p>
                 </div>
-                <div id="next-image">다음</div>
+                <p style="font-family: Noto Sans KR; font-size: 18px;"> 사진을 업로드하세요 </p>
                 <input type="file" accept="image/*" multiple id="image-upload-input">
-                <button id="cancel-upload">업로드 취소</button> <!-- 업로드 취소 버튼을 img-upload 아래로 이동 -->
             </div>
 
-            <div class="containter info-upload">
-                상품 명 <input type="text"> <br>
-                상품 설명 제목 <input type="text"> <br>
-                가격 (1000원 이상) <input type="text"><br>
-                <label for="product-status">상품 상태</label>
-                <select id="product-status" name="product-status">
+            <div class="info-upload">
+                <span class="texts">
+                    상품 명  <br>
+                상품 설명 제목 <br>
+                가격 (1000원 이상) <br>
+                <input type="checkbox" class="checkbox-bigger"> 배송비 포함 <br>
+                상품 상태<br>
+                카테고리<br>
+                <input type="checkbox" class="checkbox-bigger"> 직거래 지역
+            </span>
+ 
+                <span class="inputs">
+                    <input type="text" class="c">
+                    <input type="text" class="c">
+                    <input type="text" class="c"> 
+                    <label for="product-status" class="c"></label>
+                <select id="product-status" name="product-status" style="margin-top:11px; margin-bottom: 11px; font-size:18px;">
                     <option value="미개봉">미개봉</option>
                     <option value="개봉 새상품">개봉 새상품</option>
                     <option value="중고">중고</option>
-                </select> <br>
-                <input type="checkbox" class="checkbox-bigger">
-                배송비 포함 <br>
-                카테고리 <input type="text"> <br>
-                <input type="checkbox" class="checkbox-bigger">
-                직거래 지역 <input type="text"> <br>
+                </select>
+                <select id="category-select" name="category-select" style="margin-bottom: 11px; font-size:18px;">
+                    <option value="옷">옷</option>
+                    <option value="음식">음식</option>
+                    <option value="가구">가구</option>
+                    <option value="전자">전자</option>
+                    <option value="기타">기타</option>
+                </select>
+                    <input type="text" class="c"> 
+
+                </span>
             </div>
+                
+                 </div>
 
             <div class="info-text">
                 <p>상품 설명(10자 이상)</p>
-                <textarea name="info" id="info" cols="85%" rows="10" placeholder="상품의 정보, 상태, 거래 방법, 연락처 등 상품에 대한 정보를 알기 쉽게 작성해주세요."></textarea>
+                <textarea name="info" id="info" cols="75%" rows="10" placeholder="상품의 정보, 상태, 거래 방법, 연락처 등 상품에 대한 정보를 알기 쉽게 작성해주세요."></textarea>
                 
             </div>
-
             <div class="idcerti">
-                <label for="seller-id">판매자 ID</label>
+                <label for="seller-id"><br>판매자 ID</label>
                 <input type="text" id="seller-id" name="seller-id">
                 <button id="authenticate-button">인증</button>
                 <div id="message"></div>
             </div>
 
+            </div>
+
+      
+
             <div class="upload-button" >
                 <a href="uploaded(임시).html"> 상품 등록하기 </a> 
-                </div> 
-        
+                </div>
+
             </content>
+    
     </body>
     </html>

@@ -1,37 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&display=swap'); /*폰트*/
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&display=swap');
+/*폰트*/
 
 body {
     font-family: 'Do Hyeon';
 }
-.aside-container{
+
+main {
+    display: grid;
+    place-items: center;
+}
+
+.aside-container {
     display: flex;
 }
-.container-buttons{
+
+.container-buttons {
     display: flex;
     flex-direction: column;
 }
-.container {
+
+
+
+.profile{
     display: flex;
     align-items: flex-start;
+    height: 480px;
 }
-
 .profile-box {
     display: flex;
-    width: 1000px;
+    width: 940px;
     align-items: center;
 }
 
-.profile-image {
-
+.profile-box img{
     width: 400px;
     height: 300px;
     margin: 50px;
-
 }
-
 .profile-info {
     display: flex;
     flex-direction: column;
+    margin-left: 30px;
 }
 
 .store-box {
@@ -42,7 +51,7 @@ body {
     padding: 0px;
     height: 380px;
     margin-right: 46px;
-    margin-top: 10px;
+    margin-top: 60px;
 }
 
 .store-box h2 {
@@ -89,31 +98,34 @@ body {
     height: 40px;
     font-family: "Do Hyeon";
 }
-.buttons{
+
+.buttons {
     display: flex;
     margin: 97px;
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
     font-family: "Do Hyeon";
-    
+    width: 1100px;
+
 }
 
 button#edit-button.button {
-    margin-left: 100px;
+    margin-left: 95px;
 }
 
 button#logout-button.button {
     margin-left: 40px;
 }
 
-/* 세 번째 박스: 내 지갑 스타일 */
+
 .wallet-box {
     border: 2px solid #ccc;
     padding: 0px;
     margin: 10px;
     text-align: center;
-    margin-top:50px;
+    margin-top: 50px;
+    width: 1100px;
 }
 
 

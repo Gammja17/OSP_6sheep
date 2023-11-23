@@ -4,44 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-height, initial-scale=1.0">
     <script src="3_product_detail.js"></script>
 </head>
 
 <body>
 
-    
+
     <link rel="stylesheet" type="text/css" href="0_header.css">
     <link rel="stylesheet" type="text/css" href="3_product_detail.css">
 
-        <header>
-            <div class="container">
-                <a href="2_home.html">
-                    <div id="homebutton">
-                        <img id="logo" src="10_logo.png" alt="LOGO">
-                        이화 마켓
-                    </div>
-                </a>
-                <span class="search">
-                    <input type="search" size="40" maxlength="20" placeholder="상품명, 지역명, 판매자 아이디 입력">
-                    <button>검색</button>
-                </span>
-                <div class="headerbutton">
-                    <a href="9_1_wishlist.html"><span class="hb" id="wishlist"> <img id="icon" src="10_wish.png" alt="위시"> </span></a>
-                    <a href="9_2_shopping_cart.html"><span class="hb" id="cart"> <img id="icon" src="10_cart.png" alt="카트"> </span></a>
-                    <a href="9_3_mypage.html"><span class="hb" id="mypage"> <img id="icon" src="10_my.png" alt="마이"> </span></a>
+    <header>
+        <div class="container">
+            <a href="2_home.html">
+                <div id="homebutton">
+                    <img id="logo" src="10_logo.png" alt="LOGO">
+                    이화 마켓
                 </div>
+            </a>
+            <span class="search">
+                <input type="search" size="40" maxlength="20" placeholder="상품명, 지역명, 판매자 아이디 입력">
+                <button>검색</button>
+            </span>
+            <div class="headerbutton">
+                <a href="9_1_wishlist.html"><span class="hb" id="wishlist"> <img id="icon" src="10_wish.png" alt="위시">
+                    </span></a>
+                <a href="9_2_shopping_cart.html"><span class="hb" id="cart"> <img id="icon" src="10_cart.png" alt="카트">
+                    </span></a>
+                <a href="9_3_mypage.html"><span class="hb" id="mypage"> <img id="icon" src="10_my.png" alt="마이">
+                    </span></a>
             </div>
-        </header>
-
- 
-        <div class="info-section">
-            <div class="info-block" id="product-reviews">상품 후기</div>
-            <div class="info-block" id="seller-info">판매자 정보</div>
-            <div class="info-block" id="product-details" style="background-color: #c9d8b7;">상품 상세 정보</div>
         </div>
- 
-
-
+    </header>
     <aside>
         <p style="font-weight: bold; font-size:23px"> 카테고리
         <p>
@@ -71,92 +65,118 @@
 
 
 
+    <div class="info-section">
+        <div class="info-block" id="product-reviews">상품 후기</div>
+        <div class="info-block" id="seller-info">판매자 정보</div>
+        <div class="info-block" id="product-details" style="background-color: #c9d8b7;">상품 상세 정보</div>
+    </div>
 
-        <!--이미지 슬라이드쇼로 보여줌-->
 
-        <content class="content2">
-            <div class="slideshow-container">
+    <!--이미지 슬라이드쇼로 보여줌-->
 
-                <div class="mySlides fade">
-                    <div class="numbertext">1 / 3</div>
-                    <img src="10_336-x-280.jpg" style="width: 336px;height: 280px;">
-                    <div class="text">Caption Text</div>
-                </div>
+    <content class="content2">
+        <div class="slideshow-container">
 
-                <div class="mySlides fade">
-                    <div class="numbertext">2 / 3</div>
-                    <img src="10_336-x-280.jpg" style="width: 336px;height: 280px;">
-                    <div class="text">Caption Two</div>
-                </div>
-
-                <div class="mySlides fade">
-                    <div class="numbertext">3 / 3</div>
-                    <img src="10_336-x-280.jpg" style="width: 336px;height: 280px;">
-                    <div class="text">Caption Three</div>
-                </div>
-
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-                <br>
-                <script>currentSlide(1)</script>
-
-                <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                </div>
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="10_336-x-280.jpg" style="width: 336px;height: 280px;">
+                <div class="text">Caption Text</div>
             </div>
 
-            <!--상품 설명-->
-            <div class="explainProduct">
-
-                <h1 style="font-size: 40px; margin-top: 0px;">상품명/상품 설명제목</h1>
-
-                <h2 style="font-size: 40px;margin-top: 20px; margin-bottom: 10px;">가격₩</h2>
-                <ul style="padding: 10px;font-size: 20px;margin: 0px;">
-                    <li>판매자 id</li>
-                    <li>거래지역</li>
-                    <li>상품 상태 <span class="underline">중고</p>
-                    </li>
-                </ul>
-
-                <a href="#" class="image-button">
-                    <img src="10_wish_button.png" alt="Custom Button"></a>
-                <a href="#" class="image-button">
-                    <p> </p>
-                    <img src="10_cart_button.png" alt="cart">
-                </a>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="10_336-x-280.jpg" style="width: 336px;height: 280px;">
+                <div class="text">Caption Two</div>
             </div>
-      
 
-        
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="10_336-x-280.jpg" style="width: 336px;height: 280px;">
+                <div class="text">Caption Three</div>
+            </div>
 
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-    <div class="product-information">
-        <div class="product-description-location-category">
-            <div class="product-description">
-                <h2>상품 설명</h2>
-                <p>여기에 상품의 설명을 작성합니다. 상품의 세부 정보 및 특징을 여기에 표시합니다.</p>
-                <div class="vertical-line"></div>
-                <div class="horizontal-line"></div>
+            <br>
+            <script>currentSlide(1)</script>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
             </div>
         </div>
 
-        <div class="seller-info">
-            <h2>판매자 정보</h2>
-            <img src="10_person.png" alt="판매자">
-            <p>id</p>
-            <p>온도</p>
-            <hr class="divider">
+        <!--상품 설명-->
+        <div class="explainProduct">
+
+            <h1 style="font-size: 40px; margin-top: 0px;">상품명/상품 설명제목</h1>
+
+            <h2 style="font-size: 40px;margin-top: 20px; margin-bottom: 10px;">가격₩</h2>
+            <ul style="padding: 10px;font-size: 20px;margin: 0px;">
+                <li>판매자 id</li>
+                <li>거래지역</li>
+                <li>상품 상태 <span class="underline">중고</p>
+                </li>
+            </ul>
+
+            <a href="#" class="image-button">
+                <img src="10_wish_button.png" alt="Custom Button"></a>
+            <a href="#" class="image-button">
+                <p> </p>
+                <img src="10_cart_button.png" alt="cart">
+            </a>
+        </div>
 
 
-            <div class="person">
-                <a href="#상품리뷰 상세"><img src="10_person.png" alt="구매자 1"></a>
-                <a href="#상품리뷰 상세">
-                    <h3 style="text-decoration: underline;">id</h3>
-                </a>
-                <div class="star-rating" data-current-rating="0">
+
+
+
+        <div class="product-information">
+            <div class="product-description-location-category">
+                <div class="product-description">
+                    <h2>상품 설명</h2>
+                    <p>여기에 상품의 설명을 작성합니다. 상품의 세부 정보 및 특징을 여기에 표시합니다.</p>
+                    <div class="vertical-line"></div>
+                    <div class="horizontal-line"></div>
+                </div>
+            </div>
+
+            <div class="seller-info">
+                <h2>판매자 정보</h2>
+                <img src="10_person.png" alt="판매자">
+                <p>id</p>
+                <p>온도</p>
+                <hr class="divider">
+
+
+                <div class="person">
+                    <a href="#상품리뷰 상세"><img src="10_person.png" alt="구매자 1"></a>
+                    <a href="#상품리뷰 상세">
+                        <h3 style="text-decoration: underline;">id</h3>
+                    </a>
+                    <div class="star-rating" data-current-rating="0">
+                        <div class="stars">
+                            <span class="star" onclick="setRating(this)" data-value="1">&#9733;</span>
+                            <span class="star" onclick="setRating(this)" data-value="2">&#9733;</span>
+                            <span class="star" onclick="setRating(this)" data-value="3">&#9733;</span>
+                            <span class="star" onclick="setRating(this)" data-value="4">&#9733;</span>
+                            <span class="star" onclick="setRating(this)" data-value="5">&#9733;</span>
+                        </div>
+                    </div>
+                    <p>구매자 1의 후기</p>
+                </div>
+                <hr class="divider">
+
+                <div class="person">
+                    <a href="#상품리뷰 상세"></a><img src="10_person.png" alt="구매자 2"></a>
+                    <a href="#상품리뷰 상세">
+                        <h3 style="text-decoration: underline;">id</h3>
+                    </a>
+                    <a href="#상품리뷰 상세">
+                        <div class="star-rating" data-current-rating="0">
+                    </a>
                     <div class="stars">
                         <span class="star" onclick="setRating(this)" data-value="1">&#9733;</span>
                         <span class="star" onclick="setRating(this)" data-value="2">&#9733;</span>
@@ -165,43 +185,23 @@
                         <span class="star" onclick="setRating(this)" data-value="5">&#9733;</span>
                     </div>
                 </div>
-                <p>구매자 1의 후기</p>
+                <p>구매자 2의 후기</p>
             </div>
             <hr class="divider">
+        </div>
+        </div>
 
-            <div class="person">
-                <a href="#상품리뷰 상세"></a><img src="10_person.png" alt="구매자 2"></a>
-                <a href="#상품리뷰 상세">
-                    <h3 style="text-decoration: underline;">id</h3>
-                </a>
-                <a href="#상품리뷰 상세">
-                    <div class="star-rating" data-current-rating="0">
-                </a>
-                <div class="stars">
-                    <span class="star" onclick="setRating(this)" data-value="1">&#9733;</span>
-                    <span class="star" onclick="setRating(this)" data-value="2">&#9733;</span>
-                    <span class="star" onclick="setRating(this)" data-value="3">&#9733;</span>
-                    <span class="star" onclick="setRating(this)" data-value="4">&#9733;</span>
-                    <span class="star" onclick="setRating(this)" data-value="5">&#9733;</span>
-                </div>
+        <div class="location_category">
+            <div class="box">
+                <h2>직거래 지역</h2>
+                <p>직거래 지역이 작성된다.</p>
             </div>
-            <p>구매자 2의 후기</p>
+            <div class="box">
+                <h2>카테고리</h2>
+                <p>카테고리가 작성된다.</p>
+            </div>
         </div>
-        <hr class="divider">
-    </div>
-    </div>
-
-    <div class="location_category">
-        <div class="box">
-            <h2>직거래 지역</h2>
-            <p>직거래 지역이 작성된다.</p>
-        </div>
-        <div class="box">
-            <h2>카테고리</h2>
-            <p>카테고리가 작성된다.</p>
-        </div>
-    </div>
-</content>
+    </content>
 
 
 </body>

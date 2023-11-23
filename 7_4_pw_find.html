@@ -45,6 +45,9 @@
                 <p style="font-size:23px" > 비밀번호 찾기 </p> 
             </div> 
         </content>
+
+        <div id="pwFindScreen">
+        <div class="align">
         <div class="checking-form">
             <div class="chk-area">
                 <label for="enterid">아이디(ID) 입력</label>             
@@ -58,8 +61,30 @@
             <div class="chk-area">
                 <label for="enterpin">인증번호 입력</label>
                 <input type="text" id="enterpin" name="enterpin" value="">
-                <button type="submit" class="btn-chk">제출</button><br>
+                <button type="submit" class="btn-chk" onclick="showPWFoundScreen()">제출</button><br>
             </div>
         </div>
+        </div>
+        </div>
+
+    <div  id="pwFoundScreen">
+        <div class="pw-texting">
+            <span style="font-size: 25px; margin-bottom: 5px;"> 입력해주신 휴대폰 번호로 비밀번호가 전송되었습니다. </span>
+            <button type="button" class="back_btn" onclick="showLoginScreen()">로그인 화면으로 돌아가기</button>
+        </div>
+    </div>
+
+    <script>
+        function showPWFoundScreen() {
+            document.getElementById("pwFindScreen").hidden = true;
+            document.getElementById("pwFoundScreen").hidden = false;
+        }
+    
+        function showLoginScreen() {
+            // Redirect to 7_1_log_in.html
+            window.location.href = "7_1_log_in.html";
+        }
+    </script>
+
     </body>
 </html>

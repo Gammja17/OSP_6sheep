@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&display=swap');
+/*폰트*/
+
+body {
+    font-family: 'Do Hyeon';
+}
+
+.content {
+    font-family: 'Do Hyeon';
+    float: right;
+    flex: 1;
+}
+
+.info-section {
+    font-family: 'Do Hyeon';
+    background-color: #ebefd6;
+    display: flex;
+    justify-content: column;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+}
+
+.info-block {
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    padding: 22px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 0;
+}
+
+.info-block:hover {
+    background-color: #c9d8b7;
+}
+
+main {
+    margin-left: 200px;
+    display: grid;
+    height: 100vh;
+    place-items: center;
+}
+
+.seller{
+    display: flex;
+    width: 800px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    justify-content: center;
+    align-items: center;
+    
+}
+#person-img{
+    margin-right: 60px;
+    margin-left: 0px;
+    
+}
+.seller-info{
+    margin-left: 50px;
+    margin-right: 190px;
+    width: 260px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+    
+
+#ID{
+    font-size: 30px;
+}
+#question{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+#produt-number{
+
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.button-container {
+    display: flex;
+    
+}
+
+.button {
+    padding: 10px 20px;
+    font-family: 'Do Hyeon';
+    background-color:  white;
+    border:1px solid #f5f5f5;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 0;
+    cursor: pointer;
+    width: 600px;
+    height: 80px;
+}
+
+.active-button {
+    background-color: #f5f5f5; 
+}
+
+
+
+.product-box {
+    border: 1px solid #f5f5f5;
+    padding: 0px;
+    margin: 10px;
+    width: 1200px;
+    background-color:  #f5f5f5;
+}
+
+.product-details {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px;
+    
+}
+
+.review-details {
+    display: none;
+    margin: 30px;
+}
+.custom-button {
+    background: url('10_wishbutton.png') no-repeat;
+    background-size: cover;
+    width: 35px;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+    text-indent: -9999px;
+  }
+
+
+.product {
+    width: 300px;
+    height: 200px;
+    border: 3px solid black;
+    margin: 46px;
+    display: flex;
+    transition: background-color 0.3s, opacity 0.3s;
+    flex: 0 0 calc(33.33% - 10px);
+    box-sizing: border-box; 
+    background-color: white;
+  }
+  
+  .product:hover {
+    background-color: rgba(255, 255, 255, 0.5); 
+    opacity: 0.6; 
+  }
+  
+  .product-img {
+    width: 170px; 
+    height: 200px; 
+  
+  }
+  
+  .product-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-right: 3px solid black;
+  }
+
+  .product-info{
+    margin-left: 15px;
+  }
+
+  #soldout{
+    opacity: 0.2;
+    position: relative;
+
+  }
+  .soldout-text{
+    font-size: 35px;
+    position: absolute;
+    top: 20%;
+    left: 31%;
+    opacity: 1;
+    color: red;
+  }
+
+  
+
+  .person{
+    display: flex;
+  }
+
+  img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+  }
+  
+  h3 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .divider {
+    border: 2px solid #ccc; 
+    margin: 20px 0;
+  }
+
+  .consumer-info{
+    width: 150px;
+  }
+  
+  .consumer-review p{
+    border: 1px solid;
+    border-color: #ccc;
+    width: 800px;
+    height: 100px;
+    padding: 10px;
+  }
+  .product-name{
+    background-color: #ebefd6;
+    font-size: 22px;
+    
+  }
+  

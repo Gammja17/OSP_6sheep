@@ -39,23 +39,47 @@
                     <li><a href="etc.html"> <div class="category-menu">기타</div></a></li>
                 </ul>
         </aside>
-
-        <content>
-            <div class="status">
-                <p style="font-size:23px" > 아이디 찾기 </p> 
-            </div> 
-        </content>
-        <div class="pw-chk">
-            <div class="pw-area">
-                <label for="entertelid">휴대폰 번호 입력</label>
-                <input type="text" id="entertelid" name="entertelid" value="">
-                <button type="button" class="btn-pw">인증번호 전송</button><br>
-            </div>
-            <div class="pw-area">
-                <label for="enterpinid">인증번호 입력</label>
-                <input type="text" id="enterpinid" name="enterpinid" value="">
-                <button type="button" class="btn-pw">제출</button>
-            </div>
+        <div class="status">
+            <p style="font-size: 23px;">아이디 찾기</p>
         </div>
+        
+            <div id="idFindScreen">
+            <div class="pw-chk">
+                <div class="pw-area">
+                    <label for="entertelid">휴대폰 번호 입력</label>
+                    <input type="text" id="entertelid" name="entertelid" value="">
+                    <button type="button" class="btn-pw">인증번호 전송</button><br>
+                </div>
+                <div class="pw-area">
+                    <label for="enterpinid">인증번호 입력</label>
+                    <input type="text" id="enterpinid" name="enterpinid" value="">
+                    <button type="button" class="btn-pw" onclick="showIdFoundScreen()">제출</button>
+                </div>
+            </div>
+            </div>
+        
+            <div  id="idFoundScreen" hidden>
+                <div class="pw-texting">
+                    <span style="font-size: 20px; margin-bottom: 5px;">인증이 성공적으로 완료되었습니다!</span>
+                    <div class="texxt">
+                        <span>고객님의 ID는&nbsp</span>
+                        <span style="background-color: #ebefd6;">gamja123</span>
+                        <span>&nbsp입니다.</span>
+                    </div>
+                    <button type="button" class="back_btn" onclick="showLoginScreen()">로그인 화면으로 돌아가기</button>
+                </div>
+            </div>
+        
+            <script>
+                function showIdFoundScreen() {
+                    document.getElementById("idFindScreen").hidden = true;
+                    document.getElementById("idFoundScreen").hidden = false;
+                }
+            
+                function showLoginScreen() {
+                    // Redirect to 7_1_log_in.html
+                    window.location.href = "7_1_log_in.html";
+                }
+            </script>
     </body>
     </html>

@@ -1,13 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&display=swap'); /*폰트*/
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@300;400;900&family=Noto+Serif+KR:wght@500&display=swap');
 
 .pw-texting{
+    font-family: 'Noto Sans KR';
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     height: 100vh;
+    text-align: center; 
+    margin-top:200px;
+    font-family: 'Noto Sans KR';
+    font-size:25px;
 }
 
-.pw-texting p{
-    font-family: 'Do Hyeon';
-    text-align:center;
+.texxt{
+    display: flex;
+    align-items: flex-end;
 }
+
+.back_btn{
+    width: 450px;
+    height: 50px;
+    margin-top: 20px;
+    font-family: "Noto Sans KR";
+    font-size: 23px;
+    background-color: #c9d8b7;
+    border: none;
+    transition: background-color 0.3s, opacity 0.3s; 
+    color: black;
+ }
+ 
+ .back_btn:hover{
+     background-color: #c9d8b7; 
+     opacity: 0.6; 
+ }

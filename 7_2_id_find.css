@@ -1,26 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&display=swap'); /*폰트*/
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@300;400;900&family=Noto+Serif+KR:wght@500&display=swap');
+
 .pw-chk {
-    font-family: 'Do Hyeon';
+    font-family: 'Noto Sans KR';
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     height: 100vh;
     text-align: center; 
+    margin-top:200px;
 }
 
 .pw-area {
     display: flex;
-    align-items: center;
-    margin: 10px 0; 
+    align-items: baseline;
+    margin: 5px 0; 
 }
 
 .pw-area label {
-    width: 100px; 
-    text-align: right; 
-    margin-right: 10px; 
+    font-size: 25px;
+    width: 200px;
+    text-align: right;
+    margin-right: 10px;
 }
 
 .pw-area input {
     width: 200px;
+    font-size: 25px;
 }
+
+.btn-pw{
+    width: 150px;
+    height: 45px;
+    margin-top: 10px;
+    font-family: "Noto Sans KR";
+    font-size: 20px;
+    background-color: #c9d8b7;
+    border: none;
+    margin-left:10px;
+    transition: background-color 0.3s, opacity 0.3s; 
+    color: black;
+ }
+ 
+ .btn-pw:hover{
+     background-color: #c9d8b7; 
+     opacity: 0.6; 
+ }
+ 
+ 
+.pw-texting{
+    font-family: 'Noto Sans KR';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    text-align: center; 
+    margin-top:200px;
+    font-family: 'Noto Sans KR';
+    font-size:25px;
+}
+
+.texxt{
+    display: flex;
+    align-items: flex-end;
+}
+
+.back_btn{
+    width: 450px;
+    height: 50px;
+    margin-top: 20px;
+    font-family: "Noto Sans KR";
+    font-size: 23px;
+    background-color: #c9d8b7;
+    border: none;
+    transition: background-color 0.3s, opacity 0.3s; 
+    color: black;
+ }
+ 
+ .back_btn:hover{
+     background-color: #c9d8b7; 
+     opacity: 0.6; 
+ }

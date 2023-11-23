@@ -30,7 +30,6 @@
             </div>
         </header>
         
-        <div class = "col">
             <aside>
                 <p style="font-weight: bold; font-size:23px"> 카테고리<p>
                 <ul class="category">  
@@ -43,10 +42,16 @@
                 </ul>
             </aside>
 
+            </div>
+            <content>
+                <div class="status">
+                    <p style="font-size:23px" > 회원가입 </p> 
+                </div> 
+            </content>
+
+            <div id="SUScreen">
             <div class="signup-form">
-                <form action="/submit_signup" method="post">
-                    <p style="font-size:23px; text-align: center;"> 회원 가입 </p>
-    
+
                     <div class="input-group">
                         <label for="username">아이디</label>
                         <input type="text" id="username" name="username" required>
@@ -76,8 +81,13 @@
                 
                      <div class="input-group">
                         <label for="phone">휴대폰 번호</label>
-                        <input type="tel" id="phone" name="phone" required>
+                        <input type="tel" id="phone" name="phone" style="    width: 100%; 
+                        padding: 10px; 
+                        margin: 5px 0 20px 0; 
+                        border: 1px solid #000; 
+                        border-radius: 5px; " required>
                         <button type="button" id="verify-phone" class="check-btn">인증번호 받기</button>
+                        
                     </div>
     
                     <div class="input-group">
@@ -97,11 +107,19 @@
                     </div>
     
                     <div class="input-group">
-                        <button type="submit" class="signup-btn">가입하기</button>
+                        <button type="submit" class="signup-btn" onclick="showSUcompScreen()">가입하기</button>
                     </div>
-                </form>
             </div>
         </div>
+
+                
+            <div id="SUcompScreen">
+                <div class="SU-texting">
+                    <span style="font-size: 25px; margin-bottom: 5px;">회원가입이 완료되었습니다!</span>
+                    <button type="button" class="back_btn" onclick="showLoginScreen()">로그인 화면으로 돌아가기</button>
+                </div>
+            </div>
+    
 
     </body>
 
@@ -123,5 +141,16 @@
             alert('인증되었습니다.');
         });
     });
-    </script>
+
+                function showSUcompScreen() {
+                    document.getElementById("SUScreen").hidden = true;
+                    document.getElementById("SUcompScreen").hidden = false;
+                }
+            
+                function showLoginScreen() {
+                    // Redirect to 7_1_log_in.html
+                    window.location.href = "7_1_log_in.html";
+                }
+                </script>
+
 </html>

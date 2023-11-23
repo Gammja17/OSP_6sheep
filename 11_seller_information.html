@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <link rel="stylesheet" type="text/css" href="0_header.css">
+    <link rel="stylesheet" type="text/css" href="11_seller_information.css">
+    
+    <header>
+        <div class="container">
+            <a href="2_home.html">
+                <div id="homebutton">
+                    <img id="logo" src="10_logo.png" alt="LOGO">
+                    이화 마켓
+                </div>
+            </a>
+            <span class="search">
+                <input type="search" size="40" maxlength="20" placeholder="상품명, 지역명, 판매자 아이디 입력">
+                <button>검색</button>
+            </span>
+            <div class="headerbutton">
+                <a href="9_1_wishlist.html"><span class="hb" id="wishlist"> <img id="icon" src="10_wish.png" alt="위시">
+                    </span></a>
+                <a href="9_2_shopping_cart.html"><span class="hb" id="cart"> <img id="icon" src="10_cart.png" alt="카트">
+                    </span></a>
+                <a href="9_3_mypage.html"><span class="hb" id="mypage"> <img id="icon" src="10_my.png" alt="마이">
+                    </span></a>
+            </div>
+        </div>
+    </header>
+
+    <aside>
+        <p style="font-weight: bold; font-size:23px"> 카테고리
+        <p>
+        <ul class="category">
+            <li><a href="all.html">
+                    <div class="category-menu">전체</div>
+                </a></li>
+            <li><a href="clothes.html">
+                    <div class="category-menu">옷</div>
+                </a></li>
+            <li><a href="food.html">
+                    <div class="category-menu">음식</div>
+                </a></li>
+            <li><a href="furniture.html">
+                    <div class="category-menu">가구</div>
+                </a></li>
+            <li><a href="electronic.html">
+                    <div class="category-menu">전자</div>
+                </a></li>
+            <li><a href="etc.html">
+                    <div class="category-menu">기타</div>
+                </a></li>
+        </ul>
+    </aside>
+
+
+    <content>
+        <div class="info-section">
+            <div class="info-block" id="product-reviews"><a href="6_review_detail.html">상품 후기</a></div>
+            <div class="info-block" id="seller-info" style="background-color:#c9d8b7;""><a href="11_seller_information.html">판매자 정보</a></div>
+            <div class=" info-block" id="product-details"><a href="3_product_detail.html">상품 상세 정보</a></div>
+        </div>
+    </content>
+
+    <main>
+
+        <div class="seller">
+            <img src="10_person.png" id="person-img" alt="사람사진" style="height:250px; width: 250px;">
+
+
+            <div class="seller-info">
+                <p id="ID">판매자 id</p>
+                <p id="question">판매자 온도: <u>36.5°</u></p>
+                <p id="produt-number">이 판매자의 상품 <u>4</u></p>
+            </div>
+        </div>
+
+        <div class="product-box" id="productBox">
+
+            
+            <div class="button-container">
+                <button class="button product-details-button"  onclick="showProductDetails('productBox')">상품(4)</button>
+                <button class="button review-button" onclick="showReview('productBox')">판매자 후기</button>
+            </div>
+
+
+
+            <div class="product-details" id="productDetails1">
+                <!-- 상품 상세 내용 -->
+                <a href="3_product_detail.html">
+                    <div class="product">
+                        <span class="product-img">
+                            <img src="10_immg.png" alt="product image">
+                        </span>
+                        <div class="product-info">
+                            <p style="font-size: 23px;">에어팟</p>
+                            <p style="font-size: 15px;">
+                                80000원<br>
+                                판매자<br>
+                                34.5<br>
+                                <span style="color:orange">★★★★☆(2)</span>
+                                <button class="custom-button">Wish</button>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="3_product_detail.html">
+                    <div class="product" id="soldout">
+                        <span class="product-img">
+                            <img src="10_immg.png" alt="product image">
+                        </span>
+                        <div class="product-info">
+                            <p style="font-size: 23px;">상품명</p>
+                            <p style="font-size: 15px;">
+                                가격(원)<br>
+                                판매자<br>
+                                36.5(온도)<br>
+                                <span style="color:orange">★★★★★(2)</span>
+                                <button class="custom-button">Wish</button>
+                            </p>
+                        </div>
+                        <div class="soldout-text">
+                            <p>sold out</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="3_product_detail.html">
+                    <div class="product">
+                        <span class="product-img">
+                            <img src="10_immg.png" alt="product image">
+                        </span>
+                        <div class="product-info">
+                            <p style="font-size: 23px;">상품명</p>
+                            <p style="font-size: 15px;">
+                                가격(원)<br>
+                                판매자<br>
+                                36.5(온도)<br>
+                                <span style="color:orange">★★★★★(2)</span>
+                                <button class="custom-button">Wish</button>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="3_product_detail.html">
+                    <div class="product">
+                        <span class="product-img">
+                            <img src="10_immg.png" alt="product image">
+                        </span>
+                        <div class="product-info">
+                            <p style="font-size: 23px;">상품명</p>
+                            <p style="font-size: 15px;">
+                                가격(원)<br>
+                                판매자<br>
+                                36.5(온도)<br>
+                                <span style="color:orange">★★★★★(2)</span>
+                                <button class="custom-button">Wish</button>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="review-details" id="reviewDetails1">
+                <!-- 리뷰 내용 -->
+                <div class="person">
+                    <div class="consumer-info">
+                        <a href="#상품리뷰 상세"></a><img src="10_person.png" alt="구매자 1"></a>
+                        <a href="#상품리뷰 상세">
+                            <h3 style="text-decoration: underline;">id</h3>
+                        </a>
+
+                        <div class="star-rating" data-current-rating="0">
+
+                            <div class="stars">
+                                <span class="star" style="color: orange;" onclick="setRating(this)"
+                                    data-value="1">&#9733;</span>
+                                <span class="star" style="color: orange;" onclick="setRating(this)"
+                                    data-value="2">&#9733;</span>
+                                <span class="star" style="color: orange;" onclick="setRating(this)"
+                                    data-value="3">&#9733;</span>
+                                <span class="star" style="color: orange;" onclick="setRating(this)"
+                                    data-value="4">&#9733;</span>
+                                <span class="star" style="color: orange;" onclick="setRating(this)"
+                                    data-value="5">&#9733;</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="consumer-review">
+                        <a href="3_product_detail.html" class="product-name">상품명></a>
+                        <a href="6_review_detail.html"><p>저렴한 상품 감사합니다~</p></a>
+                    </div>
+                </div>
+                <hr class="divider">
+
+
+
+
+                <div class="person">
+                    <div class="consumer-info">
+                        <a href="#상품리뷰 상세"></a><img src="10_person.png" alt="구매자 2"></a>
+                        <a href="#상품리뷰 상세">
+                            <h3 style="text-decoration: underline;">id</h3>
+                        </a>
+
+                        <div class="star-rating" data-current-rating="0">
+
+                            <div class="stars">
+                                <span class="star" style="color: orange;" onclick="setRating(this)"
+                                    data-value="1">&#9733;</span>
+                                <span class="star" style="color: orange;" onclick="setRating(this)"
+                                    data-value="2">&#9733;</span>
+                                <span class="star" style="color: orange;" onclick="setRating(this)"
+                                    data-value="3">&#9733;</span>
+                                <span class="star" style="color: orange;" onclick="setRating(this)"
+                                    data-value="4">&#9733;</span>
+                                <span class="star" style="color: orange;" onclick="setRating(this)"
+                                    data-value="5">&#9733;</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="consumer-review">
+                        <a href="3_product_detail.html" class="product-name">상품명></a>
+                        <a href="6_review_detail.html"><p>친절하시네요~~^^</p></a>
+                    </div>
+                </div>
+                <hr class="divider">
+
+                <div class="person">
+                    <div class="consumer-info">
+                        <a href="#상품리뷰 상세"></a><img src="10_person.png" alt="구매자 3"></a>
+                        <a href="#상품리뷰 상세">
+                            <h3 style="text-decoration: underline;">id</h3>
+                        </a>
+
+                        <div class="star-rating" data-current-rating="0">
+
+                            <div class="stars">
+                                <span class="star" style="color: orange;" onclick="setRating(this)"
+                                    data-value="1">&#9733;</span>
+                                <span class="star" style="color: orange;" onclick="setRating(this)"
+                                    data-value="2">&#9733;</span>
+                                <span class="star" style="color: orange;" onclick="setRating(this)"
+                                    data-value="3">&#9733;</span>
+                                <span class="star" style="color: orange;" onclick="setRating(this)"
+                                    data-value="4">&#9733;</span>
+                                <span class="star" style="color: orange;" onclick="setRating(this)"
+                                    data-value="5">&#9733;</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="consumer-review">
+                        <a href="3_product_detail.html" class="product-name">상품명></a>
+                        <a href="6_review_detail.html"><p>구매자 3의 후기</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        
+    </main>
+
+    <script src="11_seller_information.js"></script>
+</body>
+</html>
